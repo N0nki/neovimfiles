@@ -106,6 +106,14 @@ nnoremap <S-Down>  <C-w>+<CR>
 
 "前のタブに移動
 nnoremap gb gT
+" タブを右に1つ移動
+nnoremap gn :tabm +1<CR>
+" タブを左に1つ移動
+nnoremap gp :tabm -1<CR>
+" タブを先頭に移動
+nnoremap gN :tabm 0<CR>
+" タブを末尾に移動
+nnoremap gP :tabm<CR>
 
 " USキーボードのみ
 noremap ; :
@@ -190,7 +198,8 @@ let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " Required:
-set runtimepath+=/Users/MacMini/.cache/dein/repos/github.com/Shougo/dein.vim
+" set runtimepath+=/Users/MacMini/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " begin setting
 if dein#load_state(s:dein_dir)
