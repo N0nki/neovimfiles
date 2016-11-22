@@ -32,3 +32,6 @@ repo = 'Yggdroot/indentLine'
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
