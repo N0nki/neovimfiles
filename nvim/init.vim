@@ -121,6 +121,9 @@ noremap ; :
 " カレントディレクトリをオープン
 nnoremap <silent> sc :<C-u>e .<CR>
 
+" terminal modeからcommand modeへ移行
+tnoremap <silent> jj <C-\><C-n>
+
 " VimFiler key remap
 " eでファイルを新規タブでオープン
 " let g:vimfiler_edit_action='tabopen'
