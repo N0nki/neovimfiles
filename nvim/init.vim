@@ -1,5 +1,12 @@
 syntax on
-set t_Co=256
+" set t_Co=256
+" TrueColorを使用
+if has('patch-7.4.1778')
+  set guicolors
+endif
+if has('nvim')
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 set background=dark
 colorscheme gruvbox
 " colorscheme tender
@@ -61,14 +68,6 @@ set noswapfile
 " ファイルの変更を可能
 set modifiable
 set write
-
-" TrueColorを使用
-if has('patch-7.4.1778')
-  set guicolors
-endif
-if has('nvim')
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
 
 " key remap ----------------------------------
 " jjでinsertからnormal
