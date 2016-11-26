@@ -8,7 +8,10 @@ if has('nvim')
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
 set background=dark
-colorscheme gruvbox
+" colorscheme gruvbox
+let g:neodark#background='dark'
+colorscheme neodark
+let g:neodark#use_custom_terminal_theme = 1
 " colorscheme tender
 " colorscheme onedark
 
