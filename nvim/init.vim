@@ -188,18 +188,35 @@ nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mr
 let g:vimfiler_as_default_explorer = 1
 let g:unite_source_history_yank_enable = 1
 
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
+
 " vim-airline
 let g:airline_theme = 'molokai'
+
 -
 " indentLine
 let g:indent_guides_start_level = 2
 
+
 " vimshell
 let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
 let g:vimshell_scrollback_limit = 100000
+
+
+" vimtex
+" 下記URLを参考にした
+" https://texwiki.texjp.org/?vimtex
+let g:vimtex_latexmk_continuous = 1
+let g:vimtex_latexmk_background = 1
+"let g:vimtex_latexmk_options = '-pdf'
+let g:vimtex_latexmk_options = '-pdfdvi'
+"let g:vimtex_latexmk_options = '-pdfps'
+"let g:vimtex_view_general_viewer = 'open'
+let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '@line @pdf @tex'
 
 " end plugin settings --------------------
 
