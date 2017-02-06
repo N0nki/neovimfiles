@@ -38,3 +38,6 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'kassio/neoterm'
+
+[[plugins]]
+repo = 'lervag/vimtex'
